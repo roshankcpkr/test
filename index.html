@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        nav a {
+            background-color: #f7c6ff;
+            border: 3px solid black;
+            border-left: none;
+            float: left;
+            padding: 1rem;
+            ;
+            color: black;
+            font-family: 'Lilita One', cursive;
+            font-size: 2rem;
+            width: 25%;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #fadcff;
+            transition: .1s ease-in;
+        }
+
+        main {
+            display: flex;
+            width: 100%;
+        }
+
+
+
+
+        /* main left section */
+
+
+
+
+        main .left-section {
+            background-color: #cbdbff;
+            position: relative;
+            width: 40%;
+            border: 3px solid black;
+            border-top: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main .left-section .heading {
+            background-color: #d2ffb9;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 1rem;
+            border-bottom: 3px solid black;
+        }
+
+
+        main .left-section h3 {
+            font-family: 'Lilita One', cursive;
+            font-size: 1.5rem;
+        }
+
+
+        main .left-section .links {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        main .left-section .links a {
+            color: black;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+        }
+
+
+
+
+        /* main mid section */
+
+
+
+
+
+        main .mid-section {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            background-color: #cbdbff;
+            border: 3px solid black;
+            border-top: none;
+            border-left: none;
+        }
+
+        main .mid-section h3 {
+            width: 100%;
+            text-align: center;
+        }
+
+        main .mid-section .top-mid-section {
+            padding: 1rem 2rem;
+            width: 100%;
+            border-bottom: 3px solid black;
+        }
+
+        main .mid-section .top-mid-section h3 {}
+
+
+        main .mid-section .top-mid-section .links2 {
+            padding: 2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        main .mid-section .top-mid-section .links2 p {
+            margin-top: 1rem;
+        }
+
+        main .mid-section .bottom-mid-section {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem 2rem;
+        }
+
+        main .mid-section .bottom-mid-section .progress {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: .5rem;
+        }
+
+        main .mid-section .bottom-mid-section .progress h4 {
+            width: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+        /* main right section */
+
+
+
+
+
+        main .right-section {
+            background-color: rgb(255, 212, 212);
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            border: 3px solid black;
+            border-top: none;
+            border-left: none;
+        }
+
+
+        main .right-section .profile-image {
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        main .right-section .profile-image img {
+            border-radius: 50%;
+        }
+
+        main .right-section .contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-left: 3rem;
+        }
+
+        main .right-section .contacts i {
+            font-size: 1.7rem;
+        }
+
+        main .right-section .contacts div a {
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+        }
+
+
+
+        /*
+        Progress Bar Animation 
+        */
+
+
+
+        .progress-bar-html {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 10px;
+            width: 130px;
+            background-color: #ff7a00;
+            animation: progress-html 1.3s ease-in-out;
+        }
+
+        @keyframes progress-html {
+            0% {
+                width: 0px;
+            }
+
+            100% {
+                width: 130px;
+            }
+        }
+
+
+
+
+        .progress-bar-css {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 10px;
+            width: 80px;
+            background-color: #ff7a00;
+            animation: progress-css 1.3s ease-in-out;
+        }
+
+        @keyframes progress-css {
+            0% {
+                width: 0px;
+            }
+
+            100% {
+                width: 80px;
+            }
+        }
+
+
+
+
+        .progress-bar-js {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 10px;
+            width: 40px;
+            background-color: #ff7a00;
+            animation: progress-js 1.3s ease-in-out;
+        }
+
+        @keyframes progress-js {
+            0% {
+                width: 0px;
+            }
+
+            100% {
+                width: 40px;
+            }
+        }
+
+
+
+
+        .progress-bar-figma {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 10px;
+            width: 120px;
+            background-color: #ff7a00;
+            animation: progress-figma 1.3s ease-in-out;
+        }
+
+        @keyframes progress-figma {
+            0% {
+                width: 0px;
+            }
+
+            100% {
+                width: 120px;
+            }
+        }
+
+
+
+
+        .progress-bar-prpro {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 10px;
+            width: 90px;
+            background-color: #ff7a00;
+            animation: progress-prpro 1.3s ease-in-out;
+        }
+
+        @keyframes progress-prpro {
+            0% {
+                width: 0px;
+            }
+
+            100% {
+                width: 90px;
+            }
+        }
+
+
+
+
+        .progress-bar-ae {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 10px;
+            width: 60px;
+            background-color: #ff7a00;
+            animation: progress-ae 1.3s ease-in-out;
+        }
+
+        @keyframes progress-ae {
+            0% {
+                width: 0px;
+            }
+
+            100% {
+                width: 60px;
+            }
+        }
+
+
+
+
+        .progress-bar-ue {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            height: 10px;
+            width: 40px;
+            background-color: #ff7a00;
+            animation: progress-ue 1.3s ease-in-out;
+        }
+
+        @keyframes progress-ue {
+            0% {
+                width: 0px;
+            }
+
+            100% {
+                width: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#about">About Me</a>
+    </nav>
+    <main>
+        <div class="left-section">
+            <div class="heading">
+                <h3>Some of my projects</h3>
+            </div>
+            <div class="links">
+                <a href="https://fyasbuk.netlify.app/" target="_blank">Facebook Ui clone</a>
+                <a href="https://parallweb.netlify.app/" target="_blank">Parallax Website</a>
+                <a href="https://kalculatoring.netlify.app/" target="_blank">Calculator</a>
+                <a href="https://mastercarddesign.netlify.app/" target="_blank">MasterCard Design</a>
+                <a href="https://hamrorestro.netlify.app/" target="_blank">Restaurant Website</a>
+            </div>
+        </div>
+        <div class="mid-section">
+            <div class="top-mid-section">
+                <h3>Hello, I am Elvik!</h3>
+                <div class="links2">
+                    <p>*A Web Developer</p>
+                    <p>*A Web Designer</p>
+                    <p>*A Video Editor</p>
+                    <p>*A UI/UX Designer</p>
+                </div>
+            </div>
+            <div class="bottom-mid-section">
+                <div class="progress">
+                    <h4>Html</h4>
+                    <div class="progress-bar-html"></div>
+                </div>
+                <div class="progress">
+                    <h4>Css</h4>
+                    <div class="progress-bar-css"></div>
+                </div>
+                <div class="progress">
+                    <h4>Javascript</h4>
+                    <div class="progress-bar-js"></div>
+                </div>
+                <div class="progress">
+                    <h4>Figma</h4>
+                    <div class="progress-bar-figma"></div>
+                </div>
+                <div class="progress">
+                    <h4>Premiere Pro</h4>
+                    <div class="progress-bar-prpro"></div>
+                </div>
+                <div class="progress">
+                    <h4>After Effects</h4>
+                    <div class="progress-bar-ae"></div>
+                </div>
+                <div class="progress">
+                    <h4>Unreal Engine</h4>
+                    <div class="progress-bar-ue"></div>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="profile-image">
+                <img src="ppp.jpg" alt="img" width="300px">
+            </div>
+            <div class="contacts">
+                <div>
+                    <a href="">
+                        <i class="fab fa-github" style="color: black;"></i>
+                        <p>Github</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <i class="fab fa-facebook" style="color: rgb(0, 60, 255);"></i>
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <i class="fab fa-instagram" style="color: tomato;"></i>
+                        <p>instagram</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <i class="fab fa-twitter" style="color: rgb(0, 140, 255);"></i>
+                        <p>Twitter</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <i class="fab fa-snapchat" style="color: orange;"></i>
+                        <p>Snapchat</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
